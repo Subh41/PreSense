@@ -115,7 +115,7 @@ The workflow covers:
 ## ⚙️ Processing Status
 The dataset was processed class-wise, with 100% completion for all categories.  
 
-![Processing Status](./results/feature_extraction/7.png)
+![Processing Status](./results/featureextraction/7.png)
 
 ---
 
@@ -133,7 +133,7 @@ Each audio frame was characterized using **spectral descriptors**, including:
 
 Example snapshot of extracted features:  
 
-![Feature Table](./results/feature_extraction/8.png)
+![Feature Table](./results/featureextraction/8.png)
 
 
 ## 📊 Feature Visualization
@@ -141,18 +141,18 @@ Example snapshot of extracted features:
 ### SCN vs SCR  
 Demonstrates how **Spectral Centroid** relates to **Spectral Crest**, differentiating lung conditions.  
 
-![SCN vs SCR](./results/feature_extraction/9.png)
+![SCN vs SCR](./results/featureextraction/9.png)
 
 
 ### SCN vs SEN  
 Shows correlation between **Spectral Centroid** and **Spectral Entropy**, highlighting Asthma’s distinct pattern.  
 
-![SCN vs SEN](./results/feature_extraction/10.png)
+![SCN vs SEN](./results/featureextraction/10.png)
 
 ### SCN vs SFLUX  
 Visualizes spectral fluctuations and their distribution across conditions.  
 
-![SCN vs SFLUX](./results/feature_extraction/11.png)
+![SCN vs SFLUX](./results/featureextraction/11.png)
 
 ## 🔗 Feature Correlations
 Understanding inter-feature dependencies is crucial for model selection and dimensionality reduction.
@@ -160,18 +160,18 @@ Understanding inter-feature dependencies is crucial for model selection and dime
 - **Overall correlation (all classes):**  
   Strong correlations between SCN, SDC, SEN, and SRO.  
 
-![Correlation Heatmap All Classes](./results/feature_extraction/12.png)
+![Correlation Heatmap All Classes](./results/featureextraction/12.png)
 
 - **Class-wise correlations:**  
 
 **Normal**  
-![Normal Heatmap](./results/feature_extraction/13.png)
+![Normal Heatmap](./results/featureextraction/13.png)
 
 **Asthma**  
-![Asthma Heatmap](./results/feature_extraction/14.png)
+![Asthma Heatmap](./results/featureextraction/14.png)
 
 **Pneumonia**  
-![Pneumonia Heatmap](./results/feature_extraction/15.png)
+![Pneumonia Heatmap](./results/featureextraction/15.png)
 
 
 ## ✅ Summary
@@ -182,7 +182,6 @@ Understanding inter-feature dependencies is crucial for model selection and dime
 This feature set forms the foundation for **Notebook 3: Feature Selection & Classification**.  
 
 ---
-
 
 ### 3) Classification
 Multiple classifiers were evaluated; **Linear SVM** performed best.
