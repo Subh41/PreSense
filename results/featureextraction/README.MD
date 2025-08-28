@@ -20,7 +20,7 @@ The workflow covers:
 ## ⚙️ Processing Status
 The dataset was processed class-wise, with 100% completion for all categories.  
 
-![Processing Status](results/feature_extraction/7.png)
+![Processing Status](./7.png)
 
 ---
 
@@ -38,7 +38,7 @@ Each audio frame was characterized using **spectral descriptors**, including:
 
 Example snapshot of extracted features:  
 
-![Feature Table](results/feature_extraction/8.png)
+![Feature Table](./8.png)
 
 ---
 
@@ -47,28 +47,28 @@ Example snapshot of extracted features:
 ### SCN vs SCR  
 Demonstrates how **Spectral Centroid** relates to **Spectral Crest**, differentiating lung conditions.  
 
-![SCN vs SCR](results/feature_extraction/9.png)
+![SCN vs SCR](./9.png)
 
 ---
 
 ### SCN vs SEN  
 Shows correlation between **Spectral Centroid** and **Spectral Entropy**, highlighting Asthma’s distinct pattern.  
 
-![SCN vs SEN](results/feature_extraction/10.png)
+![SCN vs SEN](./10.png)
 
 ---
 
 ### SCN vs SFLUX  
 Visualizes spectral fluctuations and their distribution across conditions.  
 
-![SCN vs SFLUX](results/feature_extraction/11.png)
+![SCN vs SFLUX](./11.png)
 
 ---
 
 ### SCN vs SRO  
 Plots centroid against **Spectral Roll-off**, useful for identifying high-frequency variations.  
 
-![SCN vs SRO](results/feature_extraction/12.png)
+![SCN vs SRO](./12.png)
 
 ---
 
@@ -78,18 +78,18 @@ Understanding inter-feature dependencies is crucial for model selection and dime
 - **Overall correlation (all classes):**  
   Strong correlations between SCN, SDC, SEN, and SRO.  
 
-![Correlation Heatmap All Classes](results/feature_extraction/13.png)
+![Correlation Heatmap All Classes](./13.png)
 
 - **Class-wise correlations:**  
 
 **Normal**  
-![Normal Heatmap](results/feature_extraction/14.png)
+![Normal Heatmap](./14.png)
 
 **Asthma**  
-![Asthma Heatmap](results/feature_extraction/15.png)
+![Asthma Heatmap](./15.png)
 
 **Pneumonia**  
-![Pneumonia Heatmap](results/feature_extraction/16.png)
+![Pneumonia Heatmap](./16.png)
 
 ---
 
