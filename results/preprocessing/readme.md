@@ -20,7 +20,7 @@ The processed signals are later used for **feature extraction** and **classifica
 To remove unwanted low- and high-frequency components, a **10th-order Butterworth band-pass filter** was applied.  
 This retains only frequencies between **150 Hz – 2000 Hz**, where most lung sound information lies.  
 
-![Band-pass filter response](results/preprocessing/1.png)
+![Band-pass filter response](./results/preprocessing/1.png)
 
 ---
 
@@ -32,18 +32,18 @@ Input signals were preprocessed and segmented into overlapping frames:
 
 Frames with silence were removed, leaving ~80% of useful frames.  
 
-![Dimension report](results/preprocessing/2.png)
+![Dimension report](./results/preprocessing/2.png)
 
 ---
 
 ## 🫁 Step 3: Preprocessed Lung Sounds (Overlay)
 Signals for different classes (Normal, Asthma, Pneumonia) after preprocessing, plotted in the **time domain**.  
 
-![Preprocessed time domain overlay](.results/preprocessing/3.png)
+![Preprocessed time domain overlay](./results/preprocessing/3.png)
 
 Similarly, in the **frequency domain** we observe different spectral patterns among the classes.  
 
-![Preprocessed frequency domain overlay](.results/preprocessing/4.png)
+![Preprocessed frequency domain overlay](./results/preprocessing/4.png)
 
 ---
 
@@ -53,7 +53,7 @@ Similarly, in the **frequency domain** we observe different spectral patterns am
 - **Asthma:** Weak, noisy signal with irregular patterns.  
 - **Pneumonia:** Distorted and suppressed signal structure.  
 
-![Time domain per class](.results/preprocessing/5.png)
+![Time domain per class](./results/preprocessing/5.png)
 
 ### Frequency Domain (per class)
 Each respiratory condition shows a distinct spectral signature:  
@@ -61,7 +61,7 @@ Each respiratory condition shows a distinct spectral signature:
 - **Asthma:** Broader spread with weaker energy.  
 - **Pneumonia:** Different high-frequency attenuation.  
 
-![Frequency domain per class](.results/preprocessing/6.png)
+![Frequency domain per class](./results/preprocessing/6.png)
 
 ---
 
