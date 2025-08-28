@@ -1,0 +1,2 @@
+S. Z. H. Naqvi, M. Arooj, S. Aziz, M. U. Khan, M. A. Choudhary and M. N. ul. Hassan, "Spectral Analysis of Lungs sounds for Classification of Asthma and Pneumonia Wheezing," 2020 International Conference on Electrical, Communication, and Computer Engineering (ICECCE), Istanbul, Turkey, 2020, pp. 1-6, doi: 10.1109/ICECCE49384.2020.9179417. keywords: {Lung;Diseases;Support vector machines;Feature extraction;Frequency-domain analysis;Spectral analysis;Asthma Wheeze;Lungs Sounds;Pneumonia Wheeze;Support Vector Machine},
+
