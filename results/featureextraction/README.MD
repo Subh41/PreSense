@@ -65,31 +65,24 @@ Visualizes spectral fluctuations and their distribution across conditions.
 
 ---
 
-### SCN vs SRO  
-Plots centroid against **Spectral Roll-off**, useful for identifying high-frequency variations.  
-
-![SCN vs SRO](./12.png)
-
----
-
 ## 🔗 Feature Correlations
 Understanding inter-feature dependencies is crucial for model selection and dimensionality reduction.
 
 - **Overall correlation (all classes):**  
   Strong correlations between SCN, SDC, SEN, and SRO.  
 
-![Correlation Heatmap All Classes](./13.png)
+![Correlation Heatmap All Classes](./12.png)
 
 - **Class-wise correlations:**  
 
 **Normal**  
-![Normal Heatmap](./14.png)
+![Normal Heatmap](./13.png)
 
 **Asthma**  
-![Asthma Heatmap](./15.png)
+![Asthma Heatmap](./14.png)
 
 **Pneumonia**  
-![Pneumonia Heatmap](./16.png)
+![Pneumonia Heatmap](./15.png)
 
 ---
 
