@@ -64,7 +64,7 @@ Confusion matrices illustrate the classification performance of each model.
 ## 📑 Performance Metrics
 Performance of each classifier was evaluated with **Accuracy, Precision, Recall, and F1-score**.  
 
-![Performance Table](results/./24.png)
+![Performance Table](./24.png)
 
 ### Accuracy Comparison  
 ![Accuracy Comparison](./25.png)
