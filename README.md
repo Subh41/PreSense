@@ -1,7 +1,7 @@
 # Spectral Analysis of Lung Sounds for Asthma & Pneumonia Classification
 
 <p align="center">
-  <img src="results/figures/methodology.png" width="640"><br>
+  <img src="./methodology.png" width="640"><br>
   <em>Figure 1. Proposed Methodology (extracted from IEEE paper)</em>
 </p>
 
