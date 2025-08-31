@@ -297,15 +297,10 @@ Features:
   ![1](./gui_app/g6.png)
   ![1](./gui_app/g7.png)  
 
-
-## 📊 Key Results
-- **Accuracy:** 96.7% (Linear SVM)
-- **Cross‑validation:** 5‑fold (96.7%), 10‑fold (96.4%)
-
 ## 📜 Reference
 M. Arooj, S.Z.H. Naqvi, M.U. Khan, M.A. Choudhary, S. Aziz, M.N. Hassan,  
 “Spectral Analysis of Lungs sounds for Classification of Asthma and Pneumonia Wheezing,”  
 Proc. of 2nd Int. Conf. Electrical, Communication and Computer Engineering (ICECCE), 2020.
 
 ---
-This repository is designed as an **educational resource** for students and researchers in **Biomedical Signal Processing**.
+This repository is designed as an **educational resource** for students and researchers in **Biomedical Engineering \& Signal Processing**.
