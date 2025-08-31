@@ -278,8 +278,9 @@ Tree-based ensemble methods (**BT, FT**) provide the most reliable classificatio
 ---
 ### 4) GUI Application 🎛️
 Run the GUI app to classify any `.wav` lung sound file:
-```bash
-python gui_app/lungsound_gui.py
+```
+conda activate lungapp
+streamlit run gui_app/spectral-lungsound-gui.py
 ```
 Features:
 - Load lung sound file
@@ -287,6 +288,15 @@ Features:
 - Extract and visualize features
 - Run trained models
 - Display final classification (**Asthma / Pneumonia / Normal**) with metrics
+
+  ![1](./gui_app/g1.png)
+  ![1](./gui_app/g2.png)
+  ![1](./gui_app/g3.png)
+  ![1](./gui_app/g4.png)
+  ![1](./gui_app/g5.png)
+  ![1](./gui_app/g6.png)
+  ![1](./gui_app/g7.png)  
+
 
 ## 📊 Key Results
 - **Accuracy:** 96.7% (Linear SVM)
