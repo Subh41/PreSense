@@ -13,12 +13,21 @@ This repository accompanies the IEEE conference paper:
 Lung sounds provide critical diagnostic information. Wheezing is a key indicator of pulmonary illnesses such as **Asthma** and **Pneumonia**. This project presents a **complete ML pipeline** — from preprocessing raw lung sounds, to spectral feature extraction, and classification via **Support Vector Machine (SVM)** with an accuracy of **96.7%**.
 
 ## Python Code Implementation Video:
-Part1: https://youtu.be/L5weNxm8qys
-Part2: https://youtu.be/cYuwMw4HRcQ
-Part3: https://youtu.be/fR3WTbruN2c
+
+### Part 1
+[![Part 1](https://img.youtube.com/vi/L5weNxm8qys/0.jpg)](https://youtu.be/L5weNxm8qys)
+
+### Part 2
+[![Part 2](https://img.youtube.com/vi/cYuwMw4HRcQ/0.jpg)](https://youtu.be/cYuwMw4HRcQ)
+
+### Part 3
+[![Part 3](https://img.youtube.com/vi/fR3WTbruN2c/0.jpg)](https://youtu.be/fR3WTbruN2c)
+
+---
 
 ## IEEE Paper Explained
-https://youtu.be/OxTxGVey2xc
+[![IEEE Paper Explained](https://img.youtube.com/vi/OxTxGVey2xc/0.jpg)](https://youtu.be/OxTxGVey2xc)
+
 
 ## 📂 Repository Contents
 - `paper/` → Full IEEE paper (PDF)
