@@ -8,7 +8,7 @@
 ## 📖 Overview
 This repository accompanies the IEEE conference paper:
 
-**“Spectral Analysis of Lungs sounds for Classification of Asthma and Pneumonia Wheezing”** (ICECCE 2020, Istanbul, Turkey).
+**“Spectral Analysis of Lungs sounds for Classification of Asthma and Pneumonia Wheezing”** (ICECCE 2025, Istanbul, Turkey).
 
 Lung sounds provide critical diagnostic information. Wheezing is a key indicator of pulmonary illnesses such as **Asthma** and **Pneumonia**. This project presents a **complete ML pipeline** — from preprocessing raw lung sounds, to spectral feature extraction, and classification via **Support Vector Machine (SVM)** with an accuracy of **96.7%**.
 
@@ -27,6 +27,11 @@ Lung sounds provide critical diagnostic information. Wheezing is a key indicator
 
 ## IEEE Paper Explained
 [![IEEE Paper Explained](https://img.youtube.com/vi/OxTxGVey2xc/0.jpg)](https://youtu.be/OxTxGVey2xc)
+
+---
+
+## ICECCE Paper Presentaion Video 
+[![IEEE Paper Explained](https://img.youtube.com/vi/tUuWthggLc4/0.jpg)](https://youtube.com/live/tUuWthggLc4)
 
 
 ## 📂 Repository Contents
