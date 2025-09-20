@@ -12,6 +12,14 @@ This repository accompanies the IEEE conference paper:
 
 Lung sounds provide critical diagnostic information. Wheezing is a key indicator of pulmonary illnesses such as **Asthma** and **Pneumonia**. This project presents a **complete ML pipeline** — from preprocessing raw lung sounds, to spectral feature extraction, and classification via **Support Vector Machine (SVM)** with an accuracy of **96.7%**.
 
+## Python Code Implementation Video:
+Part1: https://youtu.be/L5weNxm8qys
+Part2: https://youtu.be/cYuwMw4HRcQ
+Part3: https://youtu.be/fR3WTbruN2c
+
+## IEEE Paper Explained
+https://youtu.be/OxTxGVey2xc
+
 ## 📂 Repository Contents
 - `paper/` → Full IEEE paper (PDF)
 - `notebooks/` → Jupyter/Kaggle notebooks for preprocessing, feature extraction & classification
@@ -298,9 +306,14 @@ Features:
   ![1](./gui_app/g7.png)  
 
 ## 📜 Reference
-M. Arooj, S.Z.H. Naqvi, M.U. Khan, M.A. Choudhary, S. Aziz, M.N. Hassan,  
-“Spectral Analysis of Lungs sounds for Classification of Asthma and Pneumonia Wheezing,”  
-Proc. of 2nd Int. Conf. Electrical, Communication and Computer Engineering (ICECCE), 2020.
+@inproceedings{naqvi2020spectral,
+  title={Spectral analysis of lungs sounds for classification of asthma and pneumonia wheezing},
+  author={Naqvi, Syed Zohaib Hassan and Arooj, Misha and Aziz, Sumair and Khan, Muhammad Umar and Choudhary, Mohammad Ahmad and others},
+  booktitle={2020 International Conference on Electrical, Communication, and Computer Engineering (ICECCE)},
+  pages={1--6},
+  year={2020},
+  organization={IEEE}
+}
 
 ---
 This repository is designed as an **educational resource** for students and researchers in **Biomedical Engineering \& Signal Processing**.
