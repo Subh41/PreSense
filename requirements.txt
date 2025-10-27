@@ -1,44 +1,22 @@
 # Core dependencies
-numpy==1.24.3
-scipy==1.10.1
-pandas==2.0.3
-matplotlib==3.7.2
-scikit-learn==1.3.0
-joblib==1.3.2
+numpy>=1.21.0,<2.0.0
+scipy>=1.7.0
+pandas>=1.3.0
+matplotlib>=3.5.0
+scikit-learn>=1.0.0
+joblib>=1.0.0
 
 # Audio processing
-librosa==0.10.0.post2
-soundfile==0.12.1
-numba==0.57.1
-llvmlite==0.40.1
+librosa>=0.9.0
+soundfile>=0.10.0
+numba>=0.55.0
 
 # Visualization
-plotly==5.17.0
-seaborn==0.12.2
+plotly>=5.0.0
+seaborn>=0.11.0
 
-# Streamlit
-streamlit==1.28.0
+# Streamlit - let it use latest compatible version
+streamlit
 
 # Additional utilities
-openpyxl==3.1.2
-tqdm==4.66.1
-
-# Required for soundfile
-cffi==1.15.1
-pycparser==2.21
-
-# Required for librosa
-resampy==0.4.2
-pooch==1.7.0
-audioread==3.0.0
-soxr==0.3.6
-lazy-loader==0.3
-msgpack==1.0.5
-decorator==5.1.1
-
-# Required for plotly
-packaging==23.1
-tenacity==8.2.3
-
-# Required for scikit-learn
-threadpoolctl==3.2.0
+openpyxl>=3.0.0
