@@ -1,0 +1,54 @@
+================================================================================
+QUICK FIX: Permission Error in Notebooks
+================================================================================
+
+ERROR: PermissionError: [Errno 13] Permission denied: 'd:\Users\Dell\...'
+
+SOLUTION: Replace the DATA_ROOT configuration in your notebook with this code:
+
+--------------------------------------------------------------------------------
+COPY THIS CODE INTO YOUR NOTEBOOK:
+--------------------------------------------------------------------------------
+
+from pathlib import Path
+
+# Use pathlib to handle Windows paths correctly
+DATA_ROOT = Path(r"d:\Users\Dell\Downloads\5th sem proj\demo_dataset")
+
+# Verify it works
+if DATA_ROOT.exists():
+    print(f"SUCCESS! Dataset found at: {DATA_ROOT}")
+    
+    # Count files
+    CLASS_NAMES = ["Normal", "Asthama", "Pneumonia"]
+    for class_name in CLASS_NAMES:
+        wav_files = list((DATA_ROOT / class_name).glob("*.wav"))
+        print(f"  {class_name}: {len(wav_files)} files")
+else:
+    print(f"ERROR: Dataset not found at: {DATA_ROOT}")
+
+# Configuration
+FS_TARGET = 44100
+FRAME_MS = 250
+HOP_RATIO = 0.5
+BANDPASS = (250, 2000)
+FILTER_ORDER = 10
+SILENCE_PERCENTILE = 20
+
+--------------------------------------------------------------------------------
+
+WHAT THIS FIXES:
+- Uses pathlib.Path() which handles Windows paths better
+- Prevents trying to open folder as a file
+- Verifies the dataset exists before processing
+
+WHERE TO PUT THIS:
+- Notebook 1: Replace the cell that sets DATA_ROOT (near the top)
+- Notebook 2: Same - replace the DATA_ROOT configuration cell
+
+THEN:
+- Run the cell
+- You should see "SUCCESS! Dataset found at: ..."
+- Continue running the rest of the notebook
+
+================================================================================

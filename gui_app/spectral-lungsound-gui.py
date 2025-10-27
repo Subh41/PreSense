@@ -35,12 +35,16 @@ st.markdown("""
 # -----------------------------
 # LOAD TRAINED MODELS
 # -----------------------------
-model_dir = r"D:\Notebooks\Spectral-paper-Implementation\Trained-models"
+model_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "trained_models")
 models = {}
-for f in os.listdir(model_dir):
-    if f.endswith(".pkl"):
-        name = f.replace("_model.pkl","")
-        models[name] = joblib.load(os.path.join(model_dir,f))
+# Check if model directory exists
+if os.path.exists(model_dir):
+    for f in os.listdir(model_dir):
+        if f.endswith(".pkl"):
+            name = f.replace("_model.pkl","")
+            models[name] = joblib.load(os.path.join(model_dir,f))
+else:
+    st.warning("⚠️ Trained models directory not found. Please train models first using the notebooks.")
 
 # -----------------------------
 # SIDEBAR NAVIGATION
@@ -52,23 +56,24 @@ page = st.sidebar.radio("📑 Navigation", ["🏠 Home", "📂 Upload & Preproce
 # HOME PAGE
 # -----------------------------
 if page == "🏠 Home":
-    st.markdown("<h1 style='text-align:center; color:#2c3e50;'>🫁 Lung Sound Classification System</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align:center; color:#000000; background-color:#FFD700; padding:20px; border-radius:10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>PreSense - Early Disease Detection System for Asthma and Pneumonia</h1>", unsafe_allow_html=True)
 
     # Logos centered in one row
     col1, col2, col3 = st.columns([1,2,1])
     with col1:
-        st.image("Downloads/channels4_profile.jpg", caption="ResearchPedia", width=180)
+        # st.image("Downloads/channels4_profile.jpg", caption="ResearchPedia", width=180)
+        st.write("")
     with col2:
         st.markdown("<h3 style='text-align:center; color:#34495e;'>Powered by</h3>", unsafe_allow_html=True)
         st.markdown("""
         <div style="text-align:center; font-size:18px; color:#2c3e50;">
-            <span style="color:#2980b9; font-weight:bold;">Community of Research and Development (CRD)</span><br>
-            & <span style="color:#d35400; font-weight:bold;">ResearchPedia</span><br><br>
-            👩‍💻 <span style="color:#16a085; font-weight:bold;">Developed by Engr. Misha Urooj Khan</span>
+            <span style="color:#2980b9; font-weight:bold;">CSE 2023-2027 Project Group-3</span><br><br>
+            👩‍💻 <span style="color:#16a085; font-weight:bold;">Developed by Subhojit Das and teammates</span>
         </div>
         """, unsafe_allow_html=True)
     with col3:
-        st.image("Downloads/Misha-Urooj-Khan.webp", caption="CRD", width=180)
+        # st.image("Downloads/Misha-Urooj-Khan.webp", caption="CRD", width=180)
+        st.write("")
 
     st.markdown("<hr>", unsafe_allow_html=True)
 
@@ -76,7 +81,7 @@ if page == "🏠 Home":
     st.markdown("""
     <div style="background-color:#ecf0f1; padding:20px; border-radius:10px;">
         <p style="font-size:16px; color:#2c3e50; text-align:justify;">
-        Welcome to the <b>Lung Sound Classifier</b>, a <b style="color:#2980b9;">professional biomedical tool</b> that 
+        Welcome to <b>PreSense</b>, a <b style="color:#2980b9;">professional biomedical tool</b> for early disease detection that 
         analyzes lung sounds and classifies them into <b>Normal</b>, <b>Asthma</b>, or <b>Pneumonia</b> 
         using advanced <b>Machine Learning models</b>.
         </p>
@@ -85,15 +90,17 @@ if page == "🏠 Home":
 
     # Feature List
     st.markdown("""
-    <h3 style="color:#2c3e50;">🚀 Key Features:</h3>
-    <ul style="font-size:16px; line-height:1.6; color:#2c3e50;">
-        <li>Preprocessing with <b>normalization, filtering, silence removal</b></li>
-        <li>Extraction of <b>9+ IEEE spectral features</b></li>
-        <li>Evaluation across multiple trained models (<b>SVM, KNN, Trees, Naïve Bayes</b>, etc.)</li>
-        <li>Confusion matrices & detailed performance metrics</li>
-        <li>Final classification with <b>probability scores</b></li>
-        <li>Option to <b>download results as a professional report</b></li>
-    </ul>
+    <div style="background-color:#2c3e50; padding:20px; border-radius:10px; margin-top:20px;">
+        <h3 style="color:#FFD700;">🚀 Key Features:</h3>
+        <ul style="font-size:16px; line-height:1.8; color:#ffffff;">
+            <li>Preprocessing with <b style="color:#FFD700;">normalization, filtering, silence removal</b></li>
+            <li>Extraction of <b style="color:#FFD700;">9+ IEEE spectral features</b></li>
+            <li>Evaluation across multiple trained models (<b style="color:#FFD700;">SVM, KNN, Trees, Naïve Bayes</b>, etc.)</li>
+            <li>Confusion matrices & detailed performance metrics</li>
+            <li>Final classification with <b style="color:#FFD700;">probability scores</b></li>
+            <li>Option to <b style="color:#FFD700;">download results as a professional report</b></li>
+        </ul>
+    </div>
     """, unsafe_allow_html=True)
 
 
