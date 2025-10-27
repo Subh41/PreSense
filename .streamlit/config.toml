@@ -1,6 +1,8 @@
 [server]
 port = 8501
 maxUploadSize = 50
+enableXsrfProtection = false
+
 [theme]
 base = "light"
 primaryColor = "#2c3e50"
